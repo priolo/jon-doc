@@ -6,11 +6,11 @@ sidebar_position: 2
 
 > Yet another React library! Don't you programmers have anything better to do? Alcohol? Drugs?
 
-React does NOT manage the LOGIC of a project but only the VIEW
-I have seen too many nightmare projects with code encrusted in components!
-We need to (separate the concerns)[https://en.wikipedia.org/wiki/Separation_of_concerns]!  
-In react you usually use the (STATE PATTERN)[https://refactoring.guru/design-patterns/state]  
-There are many tools to do this:
+React does NOT manage the LOGIC of a project but only the VIEW  
+I have seen too many nightmare projects with code encrusted in components!  
+We need to [separate the concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)!
+In react you usually use the [STATE PATTERN](https://refactoring.guru/design-patterns/state)  
+There are many tools to do this:  
 - [redux-toolkit](https://redux-toolkit.js.org/)
 - [zustand](https://docs.pmnd.rs/zustand/getting-started/introduction)
 - [hookstate](https://hookstate.js.org/)

@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'NO Magic',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <div>What it does is clear!</div>
+        <div>You can also take the code (about 70 lines) and paste it into your project</div>
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'NO Multi-Purpose',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        <div>Designed ONLY to manage the STORE</div>
+        <div>It serves no other purpose!</div>
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'NO Community',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <div>Any bugs reported will be fixed.</div>
+        <div>But Jon will remain unchanged for quite some time</div>
       </>
     ),
   },

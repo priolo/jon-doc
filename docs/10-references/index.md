@@ -7,4 +7,5 @@ collapsed: true
 ---
 
 ### [StoreSetup](references/store-setup)
+### [Store](references/store)
 ### [Watcher](references/watcher)

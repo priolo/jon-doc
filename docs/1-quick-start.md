@@ -1,4 +1,5 @@
 ---
+id: "quick-start"
 title: 'Quick start'
 sidebar_label: 'Quick start'
 sidebar_position: 1
@@ -83,3 +84,6 @@ We have implemented a React STORE-PATTERN with JON
 In practice: When a MUTATOR of STORE is executed in VIEW  
 the listeners of the STORE update the hooks of the components they use.  
 The result is that the component always shows the "current" STATE of the STORE.
+  
+If you are interested in a complete project example...  
+### [github: Complete Project](https://github.com/priolo/jon-template)
