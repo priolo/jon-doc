@@ -1,41 +1,44 @@
 import React from 'react';
 import clsx from 'clsx';
 import styles from './styles.module.css';
+import {useColorMode} from '@docusaurus/theme-common';
 
 const FeatureList = [
   {
     title: 'NO Magic',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/no-magic.svg').default,
     description: (
       <>
-        <div>What it does is clear!</div>
-        <div>You can also take the code (about 70 lines) and paste it into your project</div>
+        What it does is clear!
+        You can also take the code (about 70 lines) and paste it into your project
       </>
     ),
   },
   {
     title: 'NO Multi-Purpose',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/no-multitool.svg').default,
     description: (
       <>
-        <div>Designed ONLY to manage the STORE</div>
-        <div>It serves no other purpose!</div>
+        Designed ONLY to manage the STORE
+        It serves no other purpose!
       </>
     ),
   },
   {
     title: 'NO Community',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    Svg: require('@site/static/img/no-community.svg').default,
     description: (
       <>
-        <div>Any bugs reported will be fixed.</div>
-        <div>But Jon will remain unchanged for quite some time</div>
+        Any bugs reported will be fixed.
+        But Jon will remain unchanged for quite some time
       </>
     ),
   },
 ];
 
 function Feature({Svg, title, description}) {
+  const {colorMode} = useColorMode();
+
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

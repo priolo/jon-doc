@@ -1,6 +1,6 @@
 ---
 slug: usesyncexternalstore
-title: Don't shit and you use React18!
+title: "A good reason to use React18: useSyncExternalStore"
 authors:
   name: Priolo
   title: Jon maintainer
