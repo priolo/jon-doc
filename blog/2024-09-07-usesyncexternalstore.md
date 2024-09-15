@@ -1,6 +1,6 @@
 ---
 slug: usesyncexternalstore
-title: "A good reason to use React18: useSyncExternalStore"
+title: "React18: useSyncExternalStore"
 authors:
   name: Priolo
   title: Jon maintainer
@@ -10,7 +10,6 @@ tags: [React18, hook, useSyncExternalStore]
 ---
 
 Let's consider a simple ToDo  
-This is what your colleague left you as a gift 💩 before going on holiday:  
 
 [codesandbox](https://codesandbox.io/s/to-do-vanilla-wgdgfg?file=/src/index.js)
 
@@ -43,7 +42,6 @@ const myStore = {
 [codesandbox](https://codesandbox.io/s/to-do-usesyncexternalstore-brcpe3?file=/src/store.js:23-336)
 
 It is a generic implementation of a STORE using [useSyncExternalStore](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore) 
-the new React18 hook (but it can also be done with React17!).
 therefore:   
 - `subscribe`  
 Stores a callback to be called when the STATE of the STORE is changed  
@@ -73,8 +71,8 @@ const myStore = {
 ```
 [codesandbox](https://codesandbox.io/s/to-do-usesyncexternalstore-brcpe3?file=/src/store.js:339-460)
 
-It is a picture of what our VIEW, in this case the ToDo app, should look like.
-A STATE represents one and only one view of the VIEW.
+It is a picture of what our VIEW, in this case the ToDo app, should look like.  
+A STATE represents one and only one view of the VIEW.  
 
 ### Enter the MUTATORS
 
@@ -94,8 +92,8 @@ const myStore = {
 ```
 [codesandbox](https://codesandbox.io/s/to-do-usesyncexternalstore-brcpe3?file=/src/store.js:339-460)
 
-They simply execute the `changeState` by passing it the modified STATE.
-Consequently, they will notify the changes to the COMPONENTS.
+They simply execute the `changeState` by passing it the modified STATE.  
+Consequently, they will notify the changes to the COMPONENTS.  
 (as said before)
 
 
@@ -185,4 +183,4 @@ In my opinion, compared to the others, it allows
 2) is super light  
 3) does only this, and nothing else  
   
-If you want, check it out [here](https://priolo.github.io/jon-doc/)
+If you want, check it out [here](https://priolo.github.io/jon-doc/docs/why)

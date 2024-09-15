@@ -10,7 +10,7 @@ const FeatureList = [
     description: (
       <>
         What it does is clear!
-        You can also take the code (about 70 lines) and paste it into your project
+        You can also take the code (about 60 lines) and paste it into your project
       </>
     ),
   },
@@ -25,7 +25,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'NO Community',
+    title: 'NO Caos',
     Svg: require('@site/static/img/no-community.svg').default,
     description: (
       <>

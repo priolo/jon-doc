@@ -33,8 +33,6 @@ const setup = mixStores(setupBaseAbstract, setupConcrete)
 
 
 ## Improve performance (with MEMO)
-This library offers the bare minimum  
-For the rest, use the official "react" systems  
 To optimize a component that uses STOREs:  
 [sandbox](https://codesandbox.io/s/test-render-memo-47rt7?file=/src/Cmp1.jsx:0-515)
 
@@ -61,7 +59,31 @@ export default function Cmp () {
 	,[state.value])
 }
 ```
-Here we render ONLY IF the `value` property of the `state` changes.
+
+Here we render ONLY IF the `value` property of the `state` changes.  
+Or you can use `useStoreNext` to simplify:
+
+
+```jsx
+import React, { useMemo } from "react";
+import { useStoreNext } from "@priolo/jon";
+import myStore from "stores/mystore";
+
+export default function Cmp () {
+
+	const state = useStoreNext( myStore, ( currentState, oldState ) => currentState.value!=oldState.value )
+	const { setValue } = myStore
+
+	return <div>
+		<h1>{state.value}</h1>
+		<input 
+			value={state.value}
+			onChange={(e)=>setValue(e.target.value)} 
+		/>
+	</div>
+}
+```
+
 
 
 ## Bind two value of distinct STOREs
