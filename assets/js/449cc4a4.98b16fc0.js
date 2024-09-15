@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[997],{8476:e=>{e.exports=JSON.parse('[{"label":"React18","permalink":"/jon-doc/blog/tags/react-18","count":1},{"label":"hook","permalink":"/jon-doc/blog/tags/hook","count":1},{"label":"useSyncExternalStore","permalink":"/jon-doc/blog/tags/use-sync-external-store","count":1}]')}}]);
