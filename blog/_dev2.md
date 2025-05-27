@@ -164,7 +164,7 @@ The result is that the component always shows the "current" STATE of the STORE.
 ok ok ... here there is only one "callback" and not the "listener" 
 but that's roughly how it works.
 This is the reference:
-<https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore>
+[useSyncExternalStore Hook](https://reactjs.org/docs/hooks-reference.html#usesyncexternalstore)
 
 ```jsx
 import React, { useSyncExternalStore } from "react";

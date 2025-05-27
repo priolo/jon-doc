@@ -80,7 +80,7 @@ root.render(<React.StrictMode><App /></React.StrictMode>)
 ## What we have done?
 
 We have implemented a React STORE-PATTERN with JON  
-<https://refactoring.guru/design-patterns/state>  
+[State Design Pattern](https://refactoring.guru/design-patterns/state)  
 In practice: When a MUTATOR of STORE is executed in VIEW  
 the listeners of the STORE update the hooks of the components they use.  
 The result is that the component always shows the "current" STATE of the STORE.
