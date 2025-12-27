@@ -83,4 +83,4 @@ A `dictionary`. It groups functions that change state resulting in an interface 
 #### Rules
 - the only functions that can replace one STATE with another STATE   
   (STATEs are by themselves immutable)
-- They accept a STATE and possibly a paylod and return the new modified STATE
+- They accept a payload and the store, and return a partial state object to be merged

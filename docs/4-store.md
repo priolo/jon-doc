@@ -21,7 +21,7 @@ const mySetup = {
 	getters: {
 		getUppercase: (_, {state}) => state.value.toUpperCase()
 	},
-	mutator: {
+	mutators: {
 		setValue: value => ({value})
 	}
  }

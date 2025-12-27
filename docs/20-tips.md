@@ -32,6 +32,15 @@ const setup = mixStores(setupBaseAbstract, setupConcrete)
 ```
 
 
+## Improve performance (with Selector)
+You can use the `selector` argument of `useStore` to select only a part of the state.
+The component will only re-render if the selected value changes.
+
+```jsx
+const value = useStore(myStore, state => state.value)
+```
+
+
 ## Improve performance (with MEMO)
 To optimize a component that uses STOREs:  
 [sandbox](https://codesandbox.io/s/test-render-memo-47rt7?file=/src/Cmp1.jsx:0-515)

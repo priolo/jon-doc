@@ -39,6 +39,14 @@ export function MyComponent() {
 This way when the `state` is modified (by a `mutator`)  
 the `MyComponent` will be re-rendered with the new `state`.
 
+### Selector
+You can also use a **selector** to select only a part of the state.  
+This is useful for performance optimization, as the component will only re-render if the selected value changes.
+
+```js
+const value = useStore(MyStore, state => state.value)
+```
+
 ## getters/actions/mutator
 All getters/actions/mutators in the SETUP  
 when instantiated, are placed directly in the STORE. 

@@ -4,7 +4,7 @@ sidebar_label: 'Why'
 sidebar_position: 1
 ---
 
-> Yet another React library! Don't you programmers have anything better to do?
+> Yet another React library!
 
 We need to [separate the concerns](https://en.wikipedia.org/wiki/Separation_of_concerns)!
 In react you usually use the [STATE PATTERN](https://refactoring.guru/design-patterns/state)  
@@ -27,18 +27,13 @@ and everything will work perfectly (except the `watcher` ...whatever)
 without using any dependencies in `package.json`.
 
 ```js title="jon_juice.js"
-import { useEffect, useState, useSyncExternalStore, version } from 'react'
+import { useSyncExternalStore } from 'react'
 
 // HOOK to use the STORE 
-function useStore18(store) {
-	return useSyncExternalStore(store._subscribe, () => store.state)
+export function useStore(store, selector = (state) => state) {
+	if (!store) return null
+	return useSyncExternalStore(store._subscribe, () => selector(store.state))
 }
-function useStore17(store) {
-	const [state, setState] = useState(store.state)
-	useEffect(() => store._subscribe(setState), [store])
-	return state
-}
-export const useStore = version.slice(0,2)=="17" ? useStore17 : useStore18
 
 export function createStore(setup, name) {
 

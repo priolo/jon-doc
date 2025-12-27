@@ -30,18 +30,18 @@ const mySetup = {
 	},
 	// Pure functions return a "processed" value of the STATE.
 	getters: {		
-		getUppercase: (state, _, store) => state.value.toUpperCase()
+		getUppercase: (_, store) => store.state.value.toUpperCase()
 	},
 	// They do things! For example: here you have to put API calls to the server
 	actions: {
-		addAtEnd: (state, payload, store) => {
-			store.setValue(state.value + payload)
+		addAtEnd: (payload, store) => {
+			store.setValue(store.state.value + payload)
 		}
 	},
 	// The only ones that can replace the STATE with a new one.
 	// NOTE: JON merges the returned property with the previous STATE.
 	mutators: {
-		setValue: (state, value, store) => ({value})
+		setValue: (value, store) => ({value})
 	}
 }
 
