@@ -4,8 +4,8 @@ on:
   push:
     branches:
       - main
-    # Opzionale: permette di lanciare il deploy manualmente dalla tab Actions
-    workflow_dispatch:
+  # Opzionale: permette di lanciare il deploy manualmente dalla tab Actions
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -20,7 +20,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
