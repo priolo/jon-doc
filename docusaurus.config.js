@@ -1,23 +1,26 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const {themes: prismThemes} = require('prism-react-renderer');
+const { themes: prismThemes } = require('prism-react-renderer');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: `Jon's Store`,
   tagline: 'Shamelessly copied from VUEX',
-  url: 'https://priolo.github.io/',
-  baseUrl: '/jon-doc/',
+
+  url: 'https://priolo.github.io', // Il tuo utente o organizzazione
+  baseUrl: '/jon-doc/',            // Il nome del repository
+  organizationName: 'priolo',      // Il tuo nome utente GitHub
+  projectName: 'jon-doc',          // Il nome del repo
+  deploymentBranch: 'gh-pages',    // Il branch dove finirà la build
+  trailingSlash: false,            // Consigliato per GitHub Pages
+
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/logo.svg',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'priolo', // Usually your GitHub org/user name.
-  projectName: 'jon-doc', // Usually your repo name.
-  trailingSlash: false,
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
@@ -74,7 +77,7 @@ const config = {
             position: 'left',
             label: 'Examples',
           },
-          {to: '/blog', label: 'Blog', position: 'right'},
+          { to: '/blog', label: 'Blog', position: 'right' },
           {
             href: 'https://github.com/priolo/jon',
             label: 'GitHub',
