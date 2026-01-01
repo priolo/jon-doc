@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkjon_doc=self.webpackChunkjon_doc||[]).push([[616],{1394:o=>{o.exports=JSON.parse('{"metadata":{"permalink":"/jon-doc/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
